@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidatura de Contatinho</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --text: #f8fafc;
+      --subtext: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+    body { background-color: var(--bg); color: var(--text); display: flex; justify-content: center; padding: 20px 15px; }
+
+    .container { max-width: 500px; width: 100%; background: var(--card); border-radius: 16px; padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+
+    header { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #334155; }
+
+    .tag { background: rgba(99, 102, 241, 0.2); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
+
+    h1 { font-size: 1.5rem; margin: 12px 0 4px 0; }
+
+    .subtitle { color: var(--subtext); font-size: 0.9rem; }
+
+    section { margin-top: 24px; }
+
+    h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 12px; }
+
+    p.summary { color: #cbd5e1; line-height: 1.5; font-size: 0.95rem; }
+
+    .skills-list { list-style: none; }
+
+    .skills-list li { background: #0f172a; padding: 12px; border-radius: 8px; margin-bottom: 10px; font-size: 0.9rem; color: #e2e8f0; }
+
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+
+    .photo-placeholder { width: 100%; aspect-ratio: 1; background: #334155; border-radius: 8px; object-fit: cover; }
+
+    .testimonial-card { background: #0f172a; border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 0 8px 8px 0; font-style: italic; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 10px; }
+
+    .testimonial-author { font-style: normal; font-weight: 600; color: var(--subtext); font-size: 0.75rem; margin-top: 4px; display: block; }
+
+    .cta-button { display: block; width: 100%; background: var(--accent); color: #fff; text-align: center; padding: 14px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: 1rem; margin-top: 28px; transition: background 0.2s; }
+
+    .cta-button:hover { background: var(--accent-hover); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="tag">Processo Seletivo</span>
+      <h1>Candidatura a Contatinho</h1>
+      <p class="subtitle">Vaga exclusiva destinada a: <strong>Isadora</strong></p>
+    </header>
+
+    <section>
+      <h2>Resumo Profissional</h2>
+      <p class="summary">
+        Candidato altamente motivado, com foco na entrega de boas conversas, momentos agradáveis e respostas sem monossílabos. Em busca de uma oportunidade para demonstrar minhas qualificações na prática num primeiro date.
+      </p>
+    </section>
+
+    <section>
+      <h2>Principais Qualificações</h2>
+      <ul class="skills-list">
+        <li>📱 <strong>Comunicação:</strong> Responde rápido (quando não está no trabalho) e tem curadoria apurada para mandar os melhores reels do Instagram.</li>
+        <li>🍽️ <strong>Gastronomia & Lazer:</strong> Ótima companhia para um café, bons drinks ou um rolê no fim de semana.</li>
+        <li>👔 <strong>Apresentação Pessoal:</strong> Sei me vestir, você não vai passar vergonha do meu lado.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Evidências Visuais</h2>
+      <div class="gallery">
+        <img src="foto1.jpg" alt="Foto 1" class="photo-placeholder">
+        <img src="foto2.jpg" alt="Foto 2" class="photo-placeholder">
+        <img src="foto3.jpg" alt="Foto 3" class="photo-placeholder">
+      </div>
+    </section>
+
+    <section>
+      <h2>Referências</h2>
+      <div class="testimonial-card">
+        "Aprovado pelo controle de qualidade. Não é chato e lembra das coisas que a gente conversa."
+        <span class="testimonial-author">— Fonte Anônima e Confiável</span>
+      </div>
+      <div class="testimonial-card">
+        "Tem potencial. Se aceitar o convite, as chances de arrependimento são menores que 1%."
+        <span class="testimonial-author">— Auditoria de Amigos</span>
+      </div>
+    </section>
+
+    <section>
+      <!-- ALTERE AQUI: Substitua SEU_USER_AQUI pelo seu arroba do Instagram -->
+      <a href="https://www.instagram.com/SEU_USER_AQUI/" class="cta-button" target="_blank">
+        📩 Visitar Perfil e Responder
+      </a>
+    </section>
+  </div>
+
+</body>
+</html>
